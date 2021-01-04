@@ -1,6 +1,6 @@
 # Monte Carlo Markov Chain Simulation of How Large Molecules are Transported Inside the Cells 
 
-This is repository has the codes used to simulate how large molecules (roughly nm^{3} to $\mu$m^{3} scale). We used the Gillespie algorithm to design stochastic MCMC model in kinetics. 
+This is repository has the codes used to simulate how large molecules (roughly $nm^{3}$ to $\mum^{3}$ scale). We used the Gillespie algorithm to design stochastic MCMC model in kinetics. 
 
 The study has been published in *Traffic* and has been selected as the Editor's Choice for April, 2019. 
 
