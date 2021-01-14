@@ -28,7 +28,7 @@ kin.type = 1; % 1 == kinesin1, 4 == kin2
 % number of kinesins
 kin.num = 1;
 % number of dyneins
-dyn.num = 5;
+dyn.num = 3;
 % funtion to save movie
 save_mov = 0; % =0, don't save, =1 save movie
 
@@ -120,7 +120,7 @@ for ii = 1:length(Simu)
     subplot(3,1,2);
     hold off;
     % plot the cargo symbol
-    h=plot(Simu(ii).cX,cHt,'o','MarkerSize',50,'MarkerFaceColor',[1,0.9,0.2],'MarkerEdgeColor',[1,0.8,0.4],'linew',3);
+    h=plot(Simu(ii).cX,cHt,'o','MarkerSize',1.8*50,'MarkerFaceColor',[1,0.9,0.2],'MarkerEdgeColor',[1,0.8,0.4],'linew',3);
     axis equal
     hold on;
     set(gca,'ylim',[0,max(get(gca,'ylim'))+0.3*max(get(gca,'ylim'))])
@@ -163,7 +163,7 @@ for ii = 1:length(Simu)
     
     str2posx = max(get(gca,'Xlim')) - (max(get(gca,'Xlim')) -min(get(gca,'Xlim')))*0.3;
     str2posy = max(get(gca,'Ylim')) -(max(get(gca,'Ylim')) -min(get(gca,'Ylim')))*0.5;
-    str2=sprintf('Simulation time:\n%1.4fs',Simu(ii).t);
+    str2=sprintf('Time: %1.4fs',Simu(ii).t);
     T=text(str2posx,str2posy,str2); T.FontSize = 16; axis equal
 %     h1=uicontrol('style','text','units','normalized','position',[0.63,0.5,0.1,0.1],'string',str2);
 %     h1.BackgroundColor = 'w'; h1.FontSize = 16;
@@ -176,7 +176,7 @@ for ii = 1:length(Simu)
     hold off;
     axis([min(min([motX,carX])),max(max([motX,carX])),0,cHt+0.5*cHt])
     % plot the cargo symbol
-    plot(Simu(ii).cX,cHt,'o','MarkerSize',50*70/diff(get(gca,'YLim')),'MarkerFaceColor',[1,0.9,0.2],'MarkerEdgeColor',[1,0.8,0.4]);
+    plot(Simu(ii).cX,cHt,'o','MarkerSize',2*50*70/diff(get(gca,'YLim')),'MarkerFaceColor',[1,0.9,0.2],'MarkerEdgeColor',[1,0.8,0.4]);
     
     hold on;axis([min(min([motX,carX])),max(max([motX,carX])),0,cHt+0.5*cHt])
     plot([min(min([motX,carX])),max(max([motX,carX]))],[0,0],'k','linewidth',2)
