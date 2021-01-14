@@ -17,6 +17,9 @@ Many experimental studies have done for single molecule (one car experiments), b
 
 We verified our model by recapitulating published experimental results. 
 
+<img src="/img/tigofwar.gif" width="800"/>
+
+
 Key descoveries are 
 1. Detachment kinetics play a higher role in how cargo is being trasported, rather than how strong (high stall force) or how fast (high forward stepping kinetics)
 2. Yildiz's data of 1 kinesin-1 vs 1 DDB were successfully recapitulated and hence we propose a theoretical coarse-grain model of how the cargo is transported
