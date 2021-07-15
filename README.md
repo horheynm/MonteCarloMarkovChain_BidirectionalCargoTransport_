@@ -17,7 +17,7 @@ Many experimental studies have done for single molecule (one car experiments), b
 
 We verified our model by recapitulating published experimental results. 
 
-Simulation results with a team of one kinesin-1 and four dynein are shown below:
+Simulation results with a team of one kinesin-1 and three dynein are shown below:
 <img src="/img/tugofwar.gif" width="800"/>
 
 
